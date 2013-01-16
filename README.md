@@ -21,6 +21,8 @@ Spinet is very good by itself but the experience is not 100% satisfactory. Some 
 * backbone http://backbonejs.org
 * Jasmine http://pivotal.github.com/jasmin
 
+# Node modules required
+* jasmine-node https://github.com/mhevery/jasmine-node 
 
 # Installation
 
@@ -31,8 +33,8 @@ Spinet is very good by itself but the experience is not 100% satisfactory. Some 
 
 
 # Contributing
-Fork, commit changes, create tests and send a pull request. 
-Feel free to contact me :)
+Fork, develop new features, create/upadate specs, commit changes and send a pull request. 
+Feel free to contact me before, after or in the middle :)
 
 
 # License
