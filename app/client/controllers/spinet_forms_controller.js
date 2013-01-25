@@ -6,9 +6,19 @@ Template.spinet_form.events({
   }
 });
 
+
 Template.spinet_form.form_fields = function () {
-  return SpinetBroker.get_fields_html();
+  fields = Meteor.call("fetch_form_fields", 
+                       function(error, result){
+                         Session.set("raw_html_form", result);
+
+  });
+
+  return Session.get("raw_html_form");
 };
+
+
+
 
 
 
