@@ -20,6 +20,7 @@ Spinet is very good by itself but the experience is not 100% satisfactory. Some 
 * meteor https://github.com/meteor/meteor
 * backbone http://backbonejs.org
 * Jasmine http://pivotal.github.com/jasmin
+* Bootstrap http://twitter.github.com/bootstrap
 
 # Node modules required
 * jasmine-node https://github.com/mhevery/jasmine-node 
