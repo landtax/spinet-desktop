@@ -14,26 +14,24 @@
   <fieldset>
     <legend>Options</legend>
 
-    <div class="controls">
     {{> form_options }}
-    </div>
 
   </fieldset>
-  <fieldset>
-    <button type="submit" class="btn-large btn-primary">Submit Experiment</button>
-  </fieldset>
+  <div class="span12">
+    <button type="submit" class="span btn-large btn-primary">Submit Experiment</button>
+  </div>
 </form>
-
 </template>
+
 <template name="form_options">
-{{#each options}}
+  {{#each options}}
   {{> form_option }}
-{{/each}}
+  {{/each}}
 </template>
 
 <template name="form_option">
 <label>{{this}}</label>
-<select id="{{this}}" class="span1">
+<select id="option_{{this}}" class="span1">
   <option>Yes</option>
   <option>No</option>
 </select>
