@@ -1,0 +1,38 @@
+<template name="page_run_experiment">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+<form>
+  <fieldset>
+    <legend>Inputs</legend>
+    <label>Input text using url</label>
+    <input class="span12" type="text" placeholder="As url...">
+    <label>Input text (direct paste here the content)</label>
+    <textarea rows="3" class="span12"></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Options</legend>
+
+    {{> form_options }}
+
+  </fieldset>
+  <div class="span12">
+    <button type="submit" class="span btn-large btn-primary">Submit Experiment</button>
+  </div>
+</form>
+</template>
+
+<template name="form_options">
+  {{#each options}}
+  {{> form_option }}
+  {{/each}}
+</template>
+
+<template name="form_option">
+<label>{{this}}</label>
+<select id="option_{{this}}" class="span1">
+  <option>Yes</option>
+  <option>No</option>
+</select>
+</template>

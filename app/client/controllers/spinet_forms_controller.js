@@ -17,9 +17,9 @@ Template.spinet_form.form_fields = function () {
   return Session.get("raw_html_form");
 };
 
-
-
-
+Template.form_options.options = function () {
+  return ["bio", "flush", "keeptags", "noafx", "nodate", "nodict", "noloc", "nonec", "noner", "nonumb", "noprob", "nopunt", "noquant", "xmlcqp"]
+} 
 
 
 
