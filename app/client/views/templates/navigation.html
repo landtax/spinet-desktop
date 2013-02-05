@@ -3,12 +3,17 @@
     <div class="navbar-inner">
       <a class="brand" href="#">Spinet Desktop</a>
       <ul class="nav">
-        <li><a href="#">Introduction</a></li>
-        <li class="active"><a id="run_experiment" href="#">Run Experiments</a></li>
-        <li><a id="results" href="#">Results</a></li>
-        <li><a href="#">Options</a></li>
-        <li><a href="#">About</a></li>
+        {{#each menu_items}}
+        {{#if is_current_path path }}
+        <li class="active">
+        {{ else }}
+        <li> 
+        {{/if}}
+          <a id="{{path}}" href="{{path}}">{{title}}</a>
+        </li>
+        {{/each}}
       </ul>
     </div>
   </div>
 </template>
+
