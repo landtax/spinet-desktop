@@ -1,3 +1,4 @@
+DISCLAIMER: This project is just a first attempt and a proof of concept. Not functional.
 
 ## Soaplab2 - Spinet desktop client 
 Developed by Universitat Pompeu Fabra - IULA
